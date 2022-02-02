@@ -42,12 +42,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
-		alert(allergy_count);
+		//allergy count variable here is being added by one everytime coldAdd is called 
+		total++;
+		//everytime coldAdd is used, total is added by 1 
 
         }
 
         function coldAdd(){
             cold_count = cold_count + 1;
+	    //cold count variable here is being added by one everytime coldAdd is called 
+	    total++;
+            //everytime coldAdd is used, total is added by 1 
         }
 
   </script>
@@ -92,17 +97,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
+		<h1>Are your eyes watery or itchy?</h1>
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Put Question 1 content here.</p>    
+        <p></p>    
     	</div>
 </div>
 
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1>
+		<h1>Do you have a fever?</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
