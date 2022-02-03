@@ -43,6 +43,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   
         function allergyAdd(){
             allergy_count = allergy_count + 1;
+		//adds allergy count by 1 
 	    //cold count variable here is being added by one everytime coldAdd is called 
 	    total++; 
             //everytime coldAdd is used, total is added by 1 
@@ -97,7 +98,8 @@ print total;
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Are you eyes watery or itchy?</h1>
+		<h1>Are you eyes watery or itchy?</h1> 
+		Asking 1st question 
 	</div>
 	
 	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
@@ -112,6 +114,7 @@ print total;
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Do you have a fever?</h1>
+		Asking 2nd question 
 	</div>
 	
 	<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a>
@@ -127,6 +130,7 @@ print total;
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Do you have a sore throat?</h1>
+		Asking 3rd question 
 	</div>
 	
 	<a href="#four" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a>
@@ -142,6 +146,7 @@ print total;
 <div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Are your symptoms seasonal or chronic?</h1>
+		Asking 4th question 
 	</div>
 	
 	<a href="#five" onclick="alergyAdd();" class="w3-btn w3-black"> Yes </a>
